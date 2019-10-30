@@ -61,8 +61,54 @@
 /******************
  * MAIN CONTENT
  ******************/
+.content {
+ display: inline-block;
+ width: 1100px;
+ margin: 60px calc( (100% - 1100px) / 2);
+ background: yellow;
+}
+.content > .left {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    
+}
+.content > .right {
+    display: inline-block;
+    width: 40%; 
+    float: right;
+  
+}
 
+.content h3 {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
+.content p > a {
+    text-decoration: none;
+    color: red;
+}
+
+.content p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.content .progress-bar {
+    display: inline-block;
+    width: 100%;
+}
+
+.content form {
+    display: inline-block;
+    width: 100%;
+}
 
 
 
