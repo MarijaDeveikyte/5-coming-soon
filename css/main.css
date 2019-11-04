@@ -18,7 +18,7 @@
 /******************
  * HERO
  ******************/
-.hero {
+ .hero {
     display: inline-block;
     width: 600px;
     margin: 60px calc( (100% - 600px) / 2 ) 20px;
@@ -53,85 +53,122 @@
         width: 90%;
         margin: 0 5% 25px;
     }
+        .hero > form > input {
+            color: #fff;
+            border-bottom-color: #fff;
+            outline: none;
+        }
+        .hero > form > input::placeholder {
+            color: #fff;
+        }
     .hero > .mouse {
         display: inline-block;
     }
 
-
 /******************
  * MAIN CONTENT
  ******************/
-.content {
- display: inline-block;
- width: 1100px;
- margin: 60px calc( (100% - 1100px) / 2);
+ .content {
+    display: inline-block;
+    width: 1100px;
+    margin: 60px calc( (100% - 1100px) / 2 );
+}
+    .content > .left {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+    .content > .right {
+        display: inline-block;
+        width: 40%;
+        float: right;
+    }
+    .content h3 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    .content p {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+        .content p > a {
+            text-decoration: none;
+            color: red;
+        }
+    .content .progress-bar {
+        display: inline-block;
+        width: 100%;
+    }
+    .content form {
+        display: inline-block;
+        width: 100%;
+    }
+        .content form input {
+            width: 45%;
+            float: left;
+        }
+        .content form input[name="email"] {
+            float: right;
+        }
+@media (max-width: 1200px) {
+       .content {
+          width: 900px;
+          margin: 60px calc( (100% - 1100px) / 2 );
+
+       }
+
+       @media (max-width: 1000px) {
+        .content {
+           width: 700px;
+           margin: 60px calc( (100% - 700px) / 2 );
  
-}
-.content > .left {
-    display: inline-block;
-    width: 50%;
-    float: left;
-    
-}
-.content > .right {
-    display: inline-block;
-    width: 40%; 
-    float: right;
-  
-}
+        }
 
-.content h3 {
-    display: inline-block;
-    width: 100%;
-    text-transform: uppercase;
-    margin-bottom: 20px;
 }
-
-.content p > a {
-    text-decoration: none;
-    color: red;
-}
-
-.content p {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 22px;
-}
-
-.content .progress-bar {
-    display: inline-block;
-    width: 100%;
-}
-
-.content form {
-    display: inline-block;
-    width: 100%;
-}
-
-
-
 /******************
  * FOOTER
  ******************/
 
  .footer {
-     display: inline-block;
-     width: 1100px;
-     padding: 20px 0 60px;
-     margin: 0 calc( (100% - 1100px) / 2);
-     text-align: center;
-
+    display: inline-block;
+    width: 1100px;
+    padding: 20px 0 60px;
+    margin: 0 calc( (100% - 1100px) / 2 );
+    text-align: center;
+    position: relative;
  }
 
-     .footer > .socials {
-        display: inline-block;
-        width: 100%;
-        border-bottom: 1px solid white;
-        margin-bottom: 20px;
-
+ .footer > .btn {
+    position: absolute;
+    top: -30px;
+    right: -20px;
  }
+
+ .footer > .socials {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+    .footer > .socials > a {
+        width: 40px;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 20px;
+    }
+        .footer > .socials > a:hover {
+            background-color: #fff;
+            color: #6FB2F8;
+            border-radius: 50%;
+        }
 
  .footer > .credits {
     display: inline-block;
@@ -165,9 +202,24 @@
             display: inline-block;
             color: white;
             text-decoration: none;
+        }
           
 
 .footer > .credits > p {
     display: inline-block;
     width: 100%;
 }
+
+@media (max-width: 1200px) {
+    .footer {
+        width: 900px;
+        margin: 0 calc( (100% - 900px) / 2 );
+        
+     }
+     
+     @media (max-width: 1000px) {
+        .footer {
+            width: 900px;
+            margin: 0 calc( (100% - 900px) / 2 );
+            
+         }
